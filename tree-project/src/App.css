@@ -1,17 +1,7 @@
 .App {
-  text-align: center;
+  text-align: left;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
 
 .App-header {
   background-color: #282c34;
@@ -24,15 +14,68 @@
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.entry-container {
+  position: relative;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.tooltip {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 115%; 
+  background-color: white;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 10px;
+  font-size: 15px;
+  color: #000;
+  z-index: 2;
+}
+
+.entry-container:hover .tooltip {
+  display: block;
+}
+
+
+.entry {
+  background: #b0b9e8;
+  border-radius: 77px; 
+  height: 30px;
+  
+}
+
+.sidebar {
+  height: 95%;
+  width: 300px;
+  position: fixed;
+  
+  top: 0;
+  right: 0;
+  background-color: Grey;
+  overflow-x: scroll;
+  padding-top: 20px;
+  align-content: center;
+}
+
+.sidebar p {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 20px;
+  color: white;
+  display: flex;
+  align-content: center;
+  align-items: center;
+
+
+}
+
+.sidebar p:hover {
+  color: blue;
+  background-color: white;
+}
+
+.main{
+  height: 100%;
+  padding-top: 30px;
+  font-size: 20px;
 }
